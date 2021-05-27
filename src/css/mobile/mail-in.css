@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1100px) {
+    .mail-in .mail-left {
+        /* flex: 2 !important; */
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .mail-in .mail-left {
+        flex: 1 !important;
+    }
+
+    .mail-in .mail-left .img-mail-box {
+        width: 70% !important;
+        height: 45% !important;
+    }
+
+    .mail-in .mail-left::before {
+        width: 70% !important;
+        height: 30% !important;
+        top: 47% !important;
+        left: 1% !important;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .mail-in .mail-left {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mail-right {
+        padding-right: 1rem !important;
+    }
+    .mail-in .mail-right .mail-steps .right {
+        margin-right: -50px !important;
+    }
+    .mail-in .mail-right .mail-steps .left {
+        margin-left: -50px !important;
+    }
+    
+    .mail-in .mail-right .mail-steps .step-title {
+        font-size: 1rem !important;
+        width: 110px !important;
+        height: 110px !important;
+        /* font-size: .8rem !important; */
+        /* width: 90px !important; */
+        /* height: 90px !important; */
+    }
+
+    .mail-in .mail-right .mail-steps .start .step-title,
+    .mail-in .mail-right .mail-steps .end .step-title {
+        /* width: 110px !important; */
+        height: 80px !important;
+    }
+
+    .mail-in .mail-right .mail-steps .step-title::after {
+        width: 90px !important;
+    }
+
+    /* STEPS DESC */
+    .mail-in .mail-right .mail-steps .step-desc {
+        width: calc(100% - 90px - 70px) !important;
+        font-size: .7rem !important;
+    }
+
+    .mail-in .mail-right .mail-steps .start .step-desc,
+    .mail-in .mail-right .mail-steps .left .step-desc {
+        left: 110px !important;
+        right: auto !important;
+    }
+
+    .mail-in .mail-right .mail-steps .right .step-desc,
+    .mail-in .mail-right .mail-steps .end .step-desc {
+        right: 90px !important;
+        left: auto !important;
+    }
+
+    .mail-in  .mail-right .mail-info {
+        font-size: .8rem !important;
+    }
+}

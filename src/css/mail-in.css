@@ -1,0 +1,204 @@
+@import "./mobile/mail-in.css";
+/* @import "./mobile/mail-in.css" screen and (max-width: 1100px); */
+
+/* MAIL IN REAPAIR SECTION */
+.mail-in {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--container-padding);
+    overflow: hidden;
+  }
+  
+  /* mail in left */
+  .mail-in .mail-left {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 2;
+  }
+  
+  .mail-in .mail-left .img-mail-box {
+    position: relative;
+    width: 65%;
+    /* height: auto; */
+    height: 70%;
+    /* transform: translateY(30%); */
+  }
+  
+  .mail-in .mail-left::before {
+    z-index: -10;
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 46%;
+    top: 43%;
+    left: 5%;
+    bottom: auto;
+    right: auto;
+    background-color: #E9E9E9;
+    border-radius: 100%;
+    transform: skewX(165deg);
+  }
+  
+  /* mail in right */
+  .mail-in .mail-right {
+    position: relative;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-end; */
+  }
+  
+  .mail-in .mail-right .reg-title {
+    position: relative;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  /* MAIL IN STEPS */
+  
+  .mail-in .mail-right .mail-steps .step {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0;
+  }
+  
+  /* reverse steos rights and end */
+  .mail-in .mail-right .mail-steps .right,
+  .mail-in .mail-right .mail-steps .end {
+    flex-direction: row-reverse;
+  }
+  
+  /* all step-titles */
+  .mail-in .mail-right .mail-steps .step-title {
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+    /* TO ALIGN LEFT AND RIGHT MARGIN */
+  .mail-in .mail-right .mail-steps .start .step-title{
+    right: auto;
+    left: -1rem;
+  }
+  .mail-in .mail-right .mail-steps .end .step-title {
+    left: auto;
+    right: -2rem ;
+  }
+    /* TO ALIGN LEFT AND RIGHT MARGIN */
+
+
+  .mail-in .mail-right .mail-steps .start .step-title,
+  .mail-in .mail-right .mail-steps .end .step-title {
+    height: 90px;
+  }
+  
+  .mail-in .mail-right .mail-steps .right .step-title,
+  .mail-in .mail-right .mail-steps .left .step-title {
+    border-radius: 50%;
+    border: 4px solid var(--hero-btn-bg);
+  }
+  
+  .mail-in .mail-right .mail-steps .start .step-title::before,
+  .mail-in .mail-right .mail-steps .end .step-title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--hero-btn-bg);
+    transform: skewX(150deg);
+  }
+  
+  .mail-in .mail-right .mail-steps .step-title::after {
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/electric-arrow-left.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .mail-in .mail-right .mail-steps .right .step-title::after,
+  .mail-in .mail-right .mail-steps .end .step-title::after {
+    transform: rotate(180deg);
+    right: 100%;
+    left: auto;
+  }
+  
+  .mail-in .mail-right .mail-steps .start .step-title::after,
+  .mail-in .mail-right .mail-steps .left .step-title::after {
+    right: auto;
+    left: 100%;
+  }
+  
+  
+  
+  /* STEPS DESC */
+  .mail-in .mail-right .mail-steps .step-desc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 150px - 130px);
+    top: 0;
+    bottom: auto;
+  }
+  
+  .mail-in .mail-right .mail-steps .start .step-desc,
+  .mail-in .mail-right .mail-steps .left .step-desc {
+    left: 150px;
+    right: auto;
+  }
+  
+  .mail-in .mail-right .mail-steps .right .step-desc,
+  .mail-in .mail-right .mail-steps .end .step-desc {
+    right: 150px;
+    left: auto;
+  }
+  
+  /* check here for more information */
+  .mail-in  .mail-right .mail-info  {
+    /* background-color: red; */
+    position: relative;
+    width: auto;
+    height: 100%;
+    margin: 3rem 0;
+  }
+  .mail-in .mail-right .mail-info::before {
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    content: "";
+    width: 90%;
+    height: 2px;
+    background-color: var(--hero-btn-bg);
+    transform: translate(.3rem, .3rem);
+  }
+  .mail-in .mail-right .mail-info::after {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    content: "";
+    width: 90%;
+    height: 2px;
+    background-color: var(--hero-btn-bg);
+    transform: translate(.8rem, .65rem);
+  }

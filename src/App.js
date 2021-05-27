@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Landing from "./Components/Landing";
+import GetQuoteModel from "./Components/Landing/Pages/GetQuote/PhoneModel";
+import GetQuoteDetails from "./Components/Landing/Pages/GetQuote/QuoteDetails";
+
+import {
+  homePage,
+  getQuotePage,
+  getQuoteDetailsPage,
+} from "./configs/datas/links";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path={homePage} exact>
+            <Landing />
+          </Route>
+          <Route path={getQuotePage} exact>
+            <GetQuoteModel />
+          </Route>
+          <Route path={getQuoteDetailsPage}>
+            <GetQuoteDetails />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

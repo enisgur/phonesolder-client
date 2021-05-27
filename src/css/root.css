@@ -1,0 +1,43 @@
+@import "./mobile/root.css";
+
+:root {
+  --container-padding: 0 100px;
+  --text-main: #000000;
+
+  --hero-btn-bg: #eee94b;
+  --hero-btn-bg-hover: #cac640;
+
+  --comp-text-color: #e74b26;
+  --sub-text-color: #868204;
+  --sub-subtext-color: #686868;
+
+  --footer-bg: #4f4f4f;
+  --footer-text-color: #ffffff;
+  --footer-copy-right-color: #a5a5a5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  position: relative;
+  top: 0;
+  /* width: 100vw; */
+  /* height: auto; */
+}

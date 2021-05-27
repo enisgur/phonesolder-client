@@ -1,0 +1,38 @@
+.subscribe {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+.subscribe .sub-title {
+    text-align: center;
+    color: var(--sub-text-color);
+    font-size: 2rem;
+    margin-bottom: .6rem;
+}
+.subscribe .sub-subtitle {
+    text-align: center;
+    color: var(--sub-subtext-color);
+    font-size: 1rem;
+}
+
+.subscribe .form-subscribe {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe .form-subscribe .sub-input {
+    width: 30%;
+    padding: .4rem 1.5rem;
+    border-radius: 50px;
+    margin-right: 1.5rem;
+}
+.subscribe .form-subscribe .form-submit {
+    background-color: var(--sub-text-color);
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    color: #fff;
+}

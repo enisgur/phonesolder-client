@@ -1,0 +1,104 @@
+:root {
+  --quotePage-text-color: #000000;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+.quote-page {
+  /* position: relative; */
+  /* height: 90vh; */
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-color: #fffcdd;
+  padding-bottom: 150px;
+}
+
+.quote-page a {
+  text-decoration: none;
+  color: var(--quotePage-text-color);
+}
+
+/* navbar */
+.quote-page header {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* titles */
+.quote-page .titles {
+  margin-top: 2rem;
+  text-align: center;
+}
+.quote-page .titles .title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.quote-page .titles .sub-title {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+/* models */
+.quote-page .models {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
+}
+.quote-page .models .model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 60%;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+}
+.quote-page .model:hover {
+  border: 2px solid black;
+  font-size: 1.8rem;
+  background-color: #f8f3bb;
+}
+
+/* electric svg */
+.quote-page .models::before {
+  position: absolute;
+  content: "";
+  /* background-image: url("../img/quotes/left-electric.svg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 15%;
+  height: 50px;
+  /* z-index: 1000; */
+
+  left: 0;
+  top: 100px;
+}
+
+.quote-page .models::after {
+  position: absolute;
+  content: "";
+  /* background-image: url("../img/quotes/right-electric.svg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 15%;
+  height: 80px;
+
+  right: 0;
+  bottom: 50px;
+}
